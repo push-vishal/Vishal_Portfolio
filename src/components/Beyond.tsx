@@ -28,7 +28,7 @@ export function Beyond() {
                 </span>
               </div>
             }
-            caption="Field notes — Himalayan light, 2026"
+            caption="Enjoying the moment, 2026"
           />
         </div>
 
