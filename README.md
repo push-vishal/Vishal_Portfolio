@@ -34,4 +34,17 @@ Update copy and project details in `src/components/` as needed.
 
 ## Deploy
 
-After `npm run build`, upload **`dist/index.html`** to any static host (GitHub Pages, Netlify, Vercel, etc.). The build inlines CSS and JS into one file for easy hosting.
+After `npm run build`, upload the full **`dist/`** folder (including `dist/images/`) to GitHub Pages, Netlify, Vercel, or any static host.
+
+## Push to GitHub
+
+1. Create a new repository on [github.com/new](https://github.com/new) (e.g. `vishal-portfolio`). Do **not** add a README or `.gitignore` — this project already has them.
+
+2. Link and push:
+
+```bash
+git remote add origin https://github.com/push-vishal/YOUR-REPO-NAME.git
+git push -u origin main
+```
+
+Replace `YOUR-REPO-NAME` with the repository name you chose.
