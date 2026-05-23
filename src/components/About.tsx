@@ -44,8 +44,8 @@ export function About() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-[11px] uppercase tracking-[0.2em] text-white/45">Based in</div>
-                  <div className="text-sm text-white">India · IST</div>
+                  <div className="text-[11px] uppercase tracking-[0.2em] text-white/45">Citizen of</div>
+                  <div className="text-sm text-white">India ·</div>
                 </div>
               </div>
             </div>
