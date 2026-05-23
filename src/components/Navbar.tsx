@@ -4,9 +4,9 @@ import { cn } from "../utils/cn";
 
 const links = [
   { label: "About", href: "#about", id: "about" },
-  { label: "Work", href: "#work", id: "work" },
+ { label: "Expertise", href: "#expertise", id: "expertise" },
   { label: "Building", href: "#building", id: "building" },
-  { label: "Expertise", href: "#expertise", id: "expertise" },
+   { label: "Work", href: "#work", id: "work" },
 ] as const;
 
 const sectionIds = links.map((l) => l.id);
