@@ -35,22 +35,6 @@ export function About() {
               }
               caption="Vishal Ambilkar — B.Tech CSE-AI"
             />
-            {/* Floating mini-card */}
-            <div className="glass absolute -bottom-6 -right-4 hidden rounded-2xl p-4 md:block">
-              <div className="flex items-center gap-3">
-                <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-cyan-400/30 to-violet-500/30 ring-1 ring-white/15">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="text-cyan-200">
-                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-[11px] uppercase tracking-[0.2em] text-white/45">Citizen of</div>
-                  <div className="text-sm text-white">India ·</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* RIGHT — content */}
         <div className="flex flex-col justify-center md:col-span-7 lg:col-span-7">
@@ -64,7 +48,7 @@ export function About() {
           <div className="mt-8 space-y-3.5 text-pretty text-[15.5px] leading-relaxed text-white/65 md:text-[17px]">
             <p>
               I'm <span className="text-white">Vishal Ambilkar</span>, a
-              second-year B.Tech CSE-AI student passionate about building
+              second-year B.Tech CSE-AI student at G.H Raisoni College of Engineering and Management Pune. Passionate about building
               intelligent solutions for real-world challenges.
               I lead with curiosity. <span className="text-white/85">Ownership keeps me sharp.</span> I find problems, understand them deeply, and build meaningful solutions around them.
               Versatile by nature, I use AI to move faster—but the
