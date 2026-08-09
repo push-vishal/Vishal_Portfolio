@@ -1,29 +1,73 @@
 import { SectionLabel } from "./SectionLabel";
+import { IconType } from "react-icons";
+import { 
+  SiPython, 
+  SiCplusplus, 
+  SiC, 
+  SiJavascript, 
+  SiHtml5, 
+  SiReact, 
+  SiTailwindcss, 
+  SiMysql, 
+  SiGit, 
+  SiGithub, 
+  SiVisualstudiocode 
+} from "react-icons/si";
+import { TbBrain, TbChartBar } from "react-icons/tb";
 
-const groups = [
+interface TechItem {
+  name: string;
+  icon: IconType;
+}
+
+interface Group {
+  title: string;
+  icon: string;
+  accent: string;
+  items: TechItem[];
+}
+
+const groups: Group[] = [
   {
     title: "Core Engineering",
     icon: "⌘",
     accent: "from-cyan-400/30 to-cyan-400/0",
-    items: ["Python", "C++", "C", "JavaScript"],
+    items: [
+      { name: "Python", icon: SiPython },
+      { name: "C++", icon: SiCplusplus },
+      { name: "C", icon: SiC },
+      { name: "JavaScript", icon: SiJavascript },
+    ],
   },
   {
     title: "Web Development",
     icon: "❖",
     accent: "from-violet-400/30 to-violet-400/0",
-    items: ["HTML5", "React", "Tailwind CSS"],
+    items: [
+      { name: "HTML5", icon: SiHtml5 },
+      { name: "React", icon: SiReact },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+    ],
   },
   {
     title: "Data & Analysis",
     icon: "✦",
     accent: "from-cyan-300/30 to-violet-400/0",
-    items: ["SQL", "Data Analysis", "Analytical Thinking"],
+    items: [
+      { name: "SQL", icon: SiMysql },
+      { name: "Data Analysis", icon: TbChartBar },
+      { name: "Analytical Thinking", icon: TbBrain },
+    ],
   },
   {
     title: "Workflow & Tools",
     icon: "◈",
     accent: "from-fuchsia-300/30 to-cyan-300/0",
-    items: ["Git", "GitHub", "VS Code"],
+    items: [
+      { name: "Git", icon: SiGit },
+      { name: "GitHub", icon: SiGithub },
+      { name: "VS Code", icon: SiVisualstudiocode },
+    ],
   },
 ];
 
@@ -82,14 +126,18 @@ export function Expertise() {
             </div>
             <h3 className="mt-6 text-base text-white">{g.title}</h3>
             <div className="mt-4 flex flex-wrap gap-1.5">
-              {g.items.map((it) => (
-                <span
-                  key={it}
-                  className="rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-1 text-[11.5px] text-white/70"
-                >
-                  {it}
-                </span>
-              ))}
+              {g.items.map((it) => {
+                const IconComponent = it.icon;
+                return (
+                  <span
+                    key={it.name}
+                    className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-1 text-[11.5px] text-white/70"
+                  >
+                    <IconComponent className="text-[13px] opacity-80" />
+                    {it.name}
+                  </span>
+                );
+              })}
             </div>
           </div>
         ))}
