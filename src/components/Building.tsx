@@ -28,7 +28,7 @@ export function Building() {
             <div className="hairline my-5" />
             <div className="flex items-center gap-2 text-xs text-emerald-300/90">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_2px_rgba(52,211,153,0.6)]" />
-              Active Internship
+              Completed Internship
             </div>
           </div>
         </div>
