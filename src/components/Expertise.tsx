@@ -66,7 +66,7 @@ const groups: Group[] = [
     items: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
-      { name: "VS Code", icon: SiVisualstudiocode },
+      { name: "VS Code", icon: SiVscode },
     ],
   },
 ];
