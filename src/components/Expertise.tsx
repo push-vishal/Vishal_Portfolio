@@ -1,17 +1,17 @@
 import { SectionLabel } from "./SectionLabel";
 import { IconType } from "react-icons";
-import { 
-  SiPython, 
-  SiCplusplus, 
-  SiC, 
-  SiJavascript, 
-  SiHtml5, 
-  SiReact, 
-  SiTailwindcss, 
-  SiMysql, 
+import {
+  SiPython,
+  SiCplusplus,
+  SiC,
+  SiJavascript,
+  SiHtml5,
+  SiReact,
+  SiTailwindcss,
+  SiMysql,
   SiGit,
   SiGithub,
-  SiVscode
+  SiVisualstudiocode
 } from "react-icons/si";
 import { TbBrain, TbChartBar } from "react-icons/tb";
 
@@ -66,7 +66,7 @@ const groups: Group[] = [
     items: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
-      { name: "VS Code", icon: SiVscode },
+      { name: "VS Code", icon: SiVisualstudiocode },
     ],
   },
 ];
