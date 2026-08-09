@@ -9,9 +9,9 @@ import {
   SiReact, 
   SiTailwindcss, 
   SiMysql, 
-  SiGit, 
-  SiGithub, 
-  SiVisualstudiocode 
+  SiGit,
+  SiGithub,
+  SiVscode
 } from "react-icons/si";
 import { TbBrain, TbChartBar } from "react-icons/tb";
 
