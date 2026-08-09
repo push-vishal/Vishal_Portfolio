@@ -11,9 +11,9 @@ import {
   SiMysql,
   SiGit,
   SiGithub,
-  SiVisualstudiocode
 } from "react-icons/si";
 import { TbBrain, TbChartBar } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
 
 interface TechItem {
   name: string;
@@ -66,7 +66,7 @@ const groups: Group[] = [
     items: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
-      { name: "VS Code", icon: SiVisualstudiocode },
+      { name: "VS Code", icon: VscVscode },
     ],
   },
 ];
